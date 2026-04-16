@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>For Sinthia</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Jost:wght@200;300;400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="anniversary.css" />
+</head>
+<body>
+
+  <canvas id="particles" aria-hidden="true"></canvas>
+
+  <nav class="nav-dots" id="navDots"></nav>
+
+  <main class="snap-container" id="snapContainer">
+
+    <!-- S1: Opening + countdown timer -->
+    <section class="snap-section" id="s1">
+      <div class="star-field" id="starField"></div>
+      <div class="hero-content">
+        <p class="eyebrow reveal">somewhere in this world</p>
+        <h1 class="hero-name reveal delay-1">Ayesha.</h1>
+        <p class="hero-sub reveal delay-2">There is a page on the internet<br/>that exists only for you.</p>
+        <p class="hero-sub italic reveal delay-3">This is it.</p>
+
+        <!-- countdown strip — hidden on anniversary day -->
+        <div class="hero-countdown reveal delay-4" id="heroCountdown">
+          <div class="hcd-label" id="hcdLabel">something beautiful is almost here</div>
+          <div class="hcd-units">
+            <div class="hcd-block">
+              <span class="hcd-num" id="hcd-days">--</span>
+              <span class="hcd-unit">days</span>
+            </div>
+            <span class="hcd-sep">:</span>
+            <div class="hcd-block">
+              <span class="hcd-num" id="hcd-hours">--</span>
+              <span class="hcd-unit">hrs</span>
+            </div>
+            <span class="hcd-sep">:</span>
+            <div class="hcd-block">
+              <span class="hcd-num" id="hcd-mins">--</span>
+              <span class="hcd-unit">min</span>
+            </div>
+            <span class="hcd-sep">:</span>
+            <div class="hcd-block">
+              <span class="hcd-num" id="hcd-secs">--</span>
+              <span class="hcd-unit">sec</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="scroll-hint reveal delay-5">
+          <span class="scroll-line"></span>
+          <span class="scroll-label">scroll</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- S2: The Date -->
+    <section class="snap-section" id="s2">
+      <div class="date-content">
+        <p class="eyebrow reveal">the day everything changed</p>
+        <h2 class="date-display reveal delay-1">May 2<sup class="sup">nd</sup></h2>
+        <div class="thin-line reveal delay-2"></div>
+        <div class="date-grid reveal delay-3">
+          <div class="date-card">
+            <span class="date-year">2023</span>
+            <span class="date-label">you said yes</span>
+          </div>
+          <div class="date-dot">·</div>
+          <div class="date-card">
+            <span class="date-year">2024</span>
+            <span class="date-label">you said forever</span>
+          </div>
+        </div>
+        <p class="date-note reveal delay-4">
+          &amp; somewhere between those two moments,<br/>
+          I was also born — on the very same day.<br/>
+          <em>You are the best thing May 2nd ever gave me.</em>
+        </p>
+      </div>
+    </section>
+
+    <!-- S3: Counters -->
+    <section class="snap-section" id="s3">
+      <div class="counter-content">
+        <p class="eyebrow reveal">time, counted in love</p>
+        <div class="counters reveal delay-1">
+          <div class="counter-block">
+            <div class="counter-number" id="loveDays">0</div>
+            <div class="counter-unit">days</div>
+            <div class="counter-label">since you became mine</div>
+            <div class="counter-sub" id="loveTime"></div>
+          </div>
+          <div class="counter-sep"></div>
+          <div class="counter-block">
+            <div class="counter-number" id="weddingDays">0</div>
+            <div class="counter-unit">days</div>
+            <div class="counter-label">since you became my wife</div>
+            <div class="counter-sub" id="weddingTime"></div>
+          </div>
+        </div>
+        <p class="counter-caption reveal delay-3">
+          Every second of every one of these days —<br/>
+          <em>entirely, unquestionably yours.</em>
+        </p>
+      </div>
+    </section>
+
+    <!-- S4: Her World -->
+    <section class="snap-section" id="s4">
+      <div class="world-content">
+        <p class="eyebrow reveal">the things that make you, you</p>
+        <div class="world-grid">
+          <div class="world-item reveal delay-1">
+            <div class="world-icon">♪</div>
+            <p class="world-title">The Guitar</p>
+            <p class="world-desc">The way your fingers find the strings like they were always meant to be there. I could listen forever.</p>
+          </div>
+          <div class="world-item reveal delay-2">
+            <div class="world-icon">◈</div>
+            <p class="world-title">The Library</p>
+            <p class="world-desc">You walk into libraries the way most people walk into home. Quiet, unhurried, completely at peace.</p>
+          </div>
+          <div class="world-item reveal delay-3">
+            <div class="world-icon">✦</div>
+            <p class="world-title">The Food Runs</p>
+            <p class="world-desc">Every late-night fast food craving. Every "just one more bite." I love every single one of them.</p>
+          </div>
+          <div class="world-item reveal delay-4">
+            <div class="world-icon">◎</div>
+            <p class="world-title">The Voice</p>
+            <p class="world-desc">When you sing — softly, to yourself, like you don't know I'm listening — that's when I fall for you again.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- S5: Daily Reason -->
+    <section class="snap-section" id="s5">
+      <div class="reason-content">
+        <p class="eyebrow reveal">a reason, just for today</p>
+        <div class="reason-card reveal delay-1">
+          <div class="reason-day" id="reasonDay"></div>
+          <blockquote class="reason-text" id="reasonText"></blockquote>
+          <p class="reason-note">Come back tomorrow.<br/>There will be another one waiting.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- S6: Anniversary reveal (shown only on May 2nd) -->
+    <section class="snap-section" id="s-anniversary" style="display:none;">
+      <div class="anniversary-content">
+        <div id="annivPetals"></div>
+        <p class="anniv-eyebrow reveal">may 2nd</p>
+        <h2 class="anniv-heading reveal delay-1">One year<br/>of forever.</h2>
+        <p class="anniv-sub reveal delay-2">Something is waiting for you inside.</p>
+        <div class="envelope-wrap reveal delay-3">
+          <div class="envelope" id="annivEnvelope" role="button" tabindex="0" aria-label="Open letter">
+            <div class="env-body">
+              <div class="env-fold-l"></div>
+              <div class="env-fold-r"></div>
+            </div>
+            <div class="env-flap"></div>
+            <div class="env-seal"></div>
+          </div>
+          <span class="env-hint" id="envHint">tap to open</span>
+          <div class="letter-wrap" id="letterWrap">
+            <div class="letter">
+              <span class="letter-date">May 2nd &nbsp;·&nbsp; one year</span>
+              <div class="letter-body">
+                <p>Bebo,</p>
+                <p>A year ago today, I stood beside you and made a promise I have thought about every single day since. Not because it was heavy — but because it was the lightest, most certain thing I have ever felt.</p>
+                <p>We have not had the kind of love that fills every room together. We have had the kind that crosses distance, that waits, that holds on without needing to explain why. And I think that kind is rarer. I think that kind means more.</p>
+                <p>Every time I have seen you this year, I tried to remember everything — the way you looked, the way you sounded, the exact feeling of being close to you — so I could carry it back with me. And I have. I carry it still.</p>
+                <p>You are worth every mile between us. You are worth every moment of waiting. You are the reason I don't mind the distance — because I know exactly who I am coming back to.</p>
+                <p>Happy anniversary, Sinthia. I love you more than this page can hold.</p>
+              </div>
+              <span class="letter-sig">— Babai &nbsp;✦</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- S7: Closing -->
+    <section class="snap-section" id="s7">
+      <div class="closing-content">
+        <div class="thin-line reveal"></div>
+        <p class="closing-pre reveal delay-1">This page will always be here.</p>
+        <h2 class="closing-heading reveal delay-2">Just like I will always<br/>be here for you.</h2>
+        <p class="closing-bebo reveal delay-3">Bebo.</p>
+        <p class="closing-sig reveal delay-4">— Babai</p>
+        <div class="thin-line reveal delay-5"></div>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="reasons.js"></script>
+  <script src="app.js"></script>
+  <script src="anniversary.js"></script>
+</body>
+</html>
